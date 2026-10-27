@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
 
+// Order confirmation page: keep it out of search results.
 export const metadata: Metadata = {
-  title: "LAZARD worldwide healthcare | Thank you for placing an order!!",
+  title: "Thank you for your order – TRICHONEX Free",
+  description: "Your TRICHONEX Free order has been received.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: { index: false, follow: false },
+  },
+  alternates: { canonical: "/thanks" },
 };
 
 export default function ThanksPage() {
@@ -23,11 +31,11 @@ export default function ThanksPage() {
             <div className="d-flex align-items-center">
               <div className="logo header-logo">
                 <a href="#">
-                  <img className="logo__img" src="/thanks/assets/images/logo/logo.svg" alt="logo" />
+                  <img className="logo__img" src="/thanks/assets/images/logo/logo.svg" alt="TRICHONEX Free" />
                 </a>
               </div>
               <p className="header__text m-0">
-                Official distributor of <span className="current-product__name">Nutrilaben free </span>
+                Official distributor of <span className="current-product__name">TRICHONEX Free </span>
                 <span className="country"></span>
               </p>
             </div>
@@ -52,7 +60,7 @@ export default function ThanksPage() {
                     </div>
                     <p className="order-info__text m-0">
                       {" "}
-                      <span className="current-product__name font-weight-bold">Nutrilaben free</span>
+                      <span className="current-product__name font-weight-bold">TRICHONEX Free</span>
                       &nbsp;product specialist will contact you soon to answer your questions and clarify delivery
                       details.
                     </p>
@@ -67,14 +75,14 @@ export default function ThanksPage() {
                             Your order number is <span className="order-id__value">8408558-ID</span>
                           </p>
                           <p className="current-product__text">
-                            <span className="current-product__name">Nutrilaben free</span>
+                            <span className="current-product__name">TRICHONEX Free</span>
                           </p>
                           <p className="current-product__description m-0"></p>
                         </div>
                         <img
                           className="current-product__img"
                           src="https://static.statthroat.tech/offers/757029a8-8ee9-456b-ad49-688c33fccdc9.png"
-                          alt="product"
+                          alt="TRICHONEX Free – opakowanie produktu"
                         />
                       </div>
                     </div>
@@ -116,7 +124,7 @@ export default function ThanksPage() {
               <div className="company-about__content">
                 <div className="logo footer-logo">
                   <a href="#">
-                    <img className="logo__img" src="/thanks/assets/images/logo/logo.svg" alt="logo" />
+                    <img className="logo__img" src="/thanks/assets/images/logo/logo.svg" alt="TRICHONEX Free" />
                   </a>
                 </div>
               </div>
