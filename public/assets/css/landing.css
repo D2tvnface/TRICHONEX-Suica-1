@@ -1,0 +1,11 @@
+.answer {
+    transition: all 0.3s ease;
+}
+.cont {display: flex;justify-content: center;flex-wrap: wrap;align-items: center;border: 10px outset #dd1616;background-color: rgba(216, 216, 216, 0.671);border-radius: 25px;margin: 20px 0px;}
+#country {margin: 5px 0;border: none;border-bottom: 1px solid lightgray;text-align: center;padding: 10px 20px;width: 85%;border-radius: 25px;font-size: 25px;box-shadow: 0px 3px 0px 0px #808080;}
+.left {width: 50%;}
+.left img {width: 100%;}
+@media screen and (max-width: 768px) {
+    .left {width: 100%;}
+    .right {width: 100%;}
+}
