@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 
 // Order confirmation page: keep it out of search results.
 export const metadata: Metadata = {
-  title: "Thank you for your order – TRICHONEX Free",
-  description: "Your TRICHONEX Free order has been received.",
+  title: "Dziękujemy za zamówienie – TRICHONEX Free",
+  description: "Twoje zamówienie TRICHONEX Free zostało przyjęte.",
   robots: {
     index: false,
     follow: false,
@@ -55,7 +55,7 @@ export default function ThanksPage() {
                           src="/thanks/assets/images/icons/order_green.svg"
                           alt="order"
                         />
-                        <p className="order-info__title m-0">Thank you for placing an order!</p>
+                        <p className="order-info__title m-0">Dziękujemy za złożenie zamówienia!</p>
                       </div>
                     </div>
                     <p className="order-info__text m-0">

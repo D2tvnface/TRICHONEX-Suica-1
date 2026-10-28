@@ -365,7 +365,7 @@ export default function Home() {
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="Koktajle odchudzające" src="/assets/img/ch1.png" loading="lazy" decoding="async" />
+                      <img alt="Koktajle odchudzające" src="/assets/img/ch1.png" width={115} height={231} loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
                       <p className="name">
@@ -385,7 +385,7 @@ export default function Home() {
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="Odchudzająca kawa" src="/assets/img/ch2.png" loading="lazy" decoding="async" />
+                      <img alt="Odchudzająca kawa" src="/assets/img/ch2.png" width={157} height={139} loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
                       <p className="name">
@@ -406,7 +406,7 @@ export default function Home() {
                   <div className="wrapper-item">
                     <div className="image-block">
                       {/* No width/height on the choice images: style.css fixes their height. */}
-                      <img alt="TRICHONEX Free" src="/assets/img/product.png" loading="lazy" decoding="async" />
+                      <img alt="TRICHONEX Free" src="/assets/img/product.png" width={443} height={450} loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
                       {/* The original markup put a <div> inside a <p>, which the browser split apart. */}
@@ -427,7 +427,7 @@ export default function Home() {
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="Pigułki odchudzające" src="/assets/img/ch3.png" loading="lazy" decoding="async" />
+                      <img alt="Pigułki odchudzające" src="/assets/img/ch3.png" width={87} height={165} loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
                       <p className="name">
@@ -444,7 +444,7 @@ export default function Home() {
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="Herbata odchudzająca" src="/assets/img/ch4.png" loading="lazy" decoding="async" />
+                      <img alt="Herbata odchudzająca" src="/assets/img/ch4.png" width={169} height={119} loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
                       <p className="name">
