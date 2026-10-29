@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   keywords: [
     "TRICHONEX",
     "TRICHONEX opinie",
+    "TRICHONEX pakiet próbny",
     "TRICHONEX na wypadanie włosów",
     "TRICHONEX gdzie kupić",
     "TRICHONEX oficjalna strona",

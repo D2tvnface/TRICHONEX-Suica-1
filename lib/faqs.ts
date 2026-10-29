@@ -1,10 +1,16 @@
 // Shared by the FAQ accordion and the FAQPage JSON-LD on the landing page.
-// Every answer is taken from the product copy supplied for this page.
+// Answers come from the supplied product copy and the trial terms confirmed by
+// the owner: product 0 PLN, delivery paid on receipt, extra packs optional.
 export const faqs = [
+  {
+    question: "Czy pakiet próbny TRICHONEX jest naprawdę za 0 zł?",
+    answer:
+      "Tak. Produkt w pakiecie próbnym kosztuje 0 zł. Przy odbiorze płacisz tylko koszt dostawy, bez przedpłaty. Podczas rozmowy potwierdzającej konsultant może zaproponować kolejne opakowania – ich zakup jest dobrowolny.",
+  },
   {
     question: "Jak złożyć zamówienie?",
     answer:
-      "Złóż zamówienie na tej stronie, wypełniając formularz. Specjalista skontaktuje się z Tobą, a zamówienie wyślemy jeszcze tego samego dnia.",
+      "Wpisz imię i numer telefonu w formularzu na tej stronie. Konsultant zadzwoni, aby potwierdzić zamówienie i adres dostawy, a pakiet próbny wyślemy jeszcze tego samego dnia.",
   },
   {
     question: "Jak stosować TRICHONEX?",
@@ -38,6 +44,6 @@ export const faqs = [
   },
   {
     question: "Jak płacić za zamówienie?",
-    answer: "Płatność należy uregulować przy otrzymaniu przesyłki.",
+    answer: "Bez przedpłaty. Za produkt w pakiecie próbnym płacisz 0 zł, a przy odbiorze przesyłki płacisz tylko koszt dostawy.",
   },
 ];

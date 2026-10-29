@@ -4,6 +4,7 @@ import { ogImage, siteDescription, siteName, siteTitle, siteUrl } from "@/lib/si
 import FaqList from "./_components/FaqList";
 import OrderForm from "./_components/OrderForm";
 import ScrollToForm from "./_components/ScrollToForm";
+import StickyCta from "./_components/StickyCta";
 
 export const metadata: Metadata = {
   alternates: {
@@ -47,6 +48,15 @@ const structuredData = {
         width: ogImage.width,
         height: ogImage.height,
       },
+      // Trial pack: the product is 0 PLN; delivery is paid on receipt.
+      offers: {
+        "@type": "Offer",
+        url: `${siteUrl}/#form`,
+        price: "0",
+        priceCurrency: "PLN",
+        availability: "https://schema.org/InStock",
+        description: "Pakiet próbny: produkt 0 zł, płatny tylko koszt dostawy przy odbiorze.",
+      },
     },
     {
       "@type": "FAQPage",
@@ -74,6 +84,7 @@ export default function Home() {
       />
 
       <ScrollToForm />
+      <StickyCta />
 
       <div className="wrapper">
         <header>
@@ -95,7 +106,7 @@ export default function Home() {
                 </li>
                 <li className="navigation_list-item active">
                   <a className="ever-popup-btn" data-scroll="order_form" href="#form">
-                    <i className="icon-basket"></i> ZAMAWIAM
+                    <i className="icon-basket"></i> PAKIET PRÓBNY 0 ZŁ
                   </a>
                 </li>
               </ul>
@@ -116,6 +127,9 @@ export default function Home() {
               <div className="_flower"></div>
               <div className="first_left">
                 <h1 className="title" id="hero-title">TRICHONEX na wypadanie włosów</h1>
+                <p className="trial-badge">
+                  <b>Pakiet próbny za 0 zł</b> – płacisz tylko za dostawę
+                </p>
                 <p className="subtitle">Według producenta: kompletna odnowa włosów w ciągu 28 dni</p>
                 <div className="mobile_wrapper">
                   <div className="_woman"></div>
@@ -131,8 +145,9 @@ export default function Home() {
                   </div>
                 </div>
                 <a href="#form" className="href-cont">
-                  <button className="btn ever-popup-btn">ZAMÓW TERAZ</button>
+                  <button className="btn ever-popup-btn">ODBIERZ PAKIET PRÓBNY</button>
                 </a>
+                <p className="trial-note">Bez przedpłaty · Konsultant potwierdzi zamówienie telefonicznie</p>
               </div>
             </div>
           </section>
@@ -217,7 +232,7 @@ export default function Home() {
                   <div className="_circle"></div>
                 </div>
                 <a href="#form" className="href-cont">
-                  <button className="btn ever-popup-btn">KUP TERAZ ZE ZNIŻKĄ!</button>
+                  <button className="btn ever-popup-btn">ODBIERZ PAKIET PRÓBNY 0 ZŁ</button>
                 </a>
               </div>
             </div>
@@ -358,7 +373,7 @@ export default function Home() {
                 <p className="border text">
                   Aby uniknąć fałszywych i wadliwych odpowiedników, kup oryginalny produkt tylko na tej stronie.
                   <a href="#form" className="href-cont">
-                    <button className="btn ever-popup-btn">ZAMÓW TERAZ</button>
+                    <button className="btn ever-popup-btn">ODBIERZ ORYGINAŁ ZA 0 ZŁ</button>
                   </a>
                 </p>
               </div>
@@ -399,6 +414,11 @@ export default function Home() {
                   text="Pierwszą rzeczą, na którą chcę zwrócić uwagę, jest skuteczność. Nowe włosy urosły w miejscu łysiny, a już istniejące stały się zauważalnie grubsze. Po drugie, konsekwencje ustały całkowicie. Po trzecie, cienkie włosy stały się silniejsze. Po miesiącu odzyskałam pewność siebie. Dziękuję!"
                 />
               </div>
+              <div className="center review-cta">
+                <a href="#form" className="href-cont">
+                  <button className="btn ever-popup-btn">WYPRÓBUJ ZA 0 ZŁ</button>
+                </a>
+              </div>
             </div>
           </section>
 
@@ -421,29 +441,12 @@ export default function Home() {
           <section className="last" aria-labelledby="order-title">
             <div className="_flower"></div>
             <div className="limit">
-              <div className="order-steps-wrap">
-                  <h3 className="order-steps-title">Krok po kroku</h3>
-                  <ol className="order-steps">
-                    <li>
-                      <p><b>Krok 1.</b> Złóż zamówienie na tej stronie, wypełniając formularz.</p>
-                    </li>
-                    <li>
-                      <p><b>Krok 2.</b> Specjalista skontaktuje się z Tobą.</p>
-                    </li>
-                    <li>
-                      <p><b>Krok 3.</b> Ostrożnie zapakujemy Twoje zamówienie i wyślemy jeszcze tego samego dnia.</p>
-                    </li>
-                    <li>
-                      <p><b>Krok 4.</b> Płatność należy uregulować przy otrzymaniu przesyłki.</p>
-                    </li>
-                  </ol>
-              </div>
               <div className="last-left">
                 <h2 className="title" id="order-title">
-                  Zamów TRICHONEX
+                  Odbierz pakiet próbny TRICHONEX za 0 zł
                 </h2>
                 <p className="text border">
-                  <b>Kup teraz ze zniżką!</b> Płatność należy uregulować przy otrzymaniu przesyłki.
+                  <b>Produkt: 0 zł.</b> Płacisz tylko koszt dostawy przy odbiorze. Bez przedpłaty.
                 </p>
                 <div className="last-right">
                   <div className="back"></div>
@@ -453,6 +456,26 @@ export default function Home() {
                 <div className="form">
                   <OrderForm />
                 </div>
+              </div>
+              <div className="order-steps-wrap">
+                <h3 className="order-steps-title">Jak odebrać pakiet próbny?</h3>
+                <ol className="order-steps">
+                  <li>
+                    <p><b>Krok 1.</b> Wpisz imię i numer telefonu w formularzu.</p>
+                  </li>
+                  <li>
+                    <p><b>Krok 2.</b> Konsultant zadzwoni, aby potwierdzić zamówienie i adres dostawy.</p>
+                  </li>
+                  <li>
+                    <p><b>Krok 3.</b> Ostrożnie zapakujemy pakiet próbny i wyślemy go jeszcze tego samego dnia.</p>
+                  </li>
+                  <li>
+                    <p><b>Krok 4.</b> Przy odbiorze płacisz tylko koszt dostawy.</p>
+                  </li>
+                </ol>
+                <p className="order-note">
+                  Podczas rozmowy konsultant może zaproponować kolejne opakowania. Ich zakup jest dobrowolny.
+                </p>
               </div>
             </div>
           </section>

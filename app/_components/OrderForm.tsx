@@ -15,8 +15,9 @@ const inputStyle: CSSProperties = {
 };
 
 const submitStyle: CSSProperties = {
-  padding: "10px 80px",
-  fontSize: 24,
+  padding: "12px 24px",
+  width: "85%",
+  fontSize: 22,
   cursor: "pointer",
   fontWeight: 600,
   color: "#fff",
@@ -79,8 +80,12 @@ export default function OrderForm() {
             width: "100%",
           }}
         >
-          <p>
-            <b>Płatność przy odbiorze przesyłki</b>
+          <p style={{ fontSize: 20, margin: 0 }}>
+            <b>Pakiet próbny TRICHONEX</b>
+          </p>
+          <p style={{ margin: "4px 0 10px" }}>
+            <span style={{ fontSize: 32, fontWeight: 700, color: "green" }}>0 zł</span>
+            <span> + koszt dostawy</span>
           </p>
           <form
             id="formularz1"
@@ -95,6 +100,7 @@ export default function OrderForm() {
                 name="name"
                 style={inputStyle}
                 required
+                autoComplete="name"
                 placeholder="Imię i nazwisko"
               />
               <input
@@ -104,7 +110,9 @@ export default function OrderForm() {
                 name="phone"
                 style={inputStyle}
                 required
-                placeholder=" Numer telefonu"
+                autoComplete="tel"
+                inputMode="tel"
+                placeholder="Numer telefonu"
                 onKeyUp={(event) => {
                   event.currentTarget.value = event.currentTarget.value.replace(
                     /\s/,
@@ -122,10 +130,13 @@ export default function OrderForm() {
                 style={submitStyle}
                 disabled={sending}
               >
-                Wyślij
+                {sending ? "Wysyłanie…" : "Odbieram pakiet próbny"}
               </button>
             </div>
             {error && <p style={{ color: "#dd1616" }}>{error}</p>}
+            <p style={{ fontSize: 14, margin: "0 0 6px" }}>
+              Bez przedpłaty. Konsultant oddzwoni, aby potwierdzić zamówienie.
+            </p>
           </form>
         </div>
       </div>

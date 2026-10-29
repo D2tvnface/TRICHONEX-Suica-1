@@ -6,10 +6,10 @@ export const siteUrl = (
 
 export const siteName = "TRICHONEX";
 
-export const siteTitle = "TRICHONEX na wypadanie włosów – oficjalna strona";
+export const siteTitle = "TRICHONEX na wypadanie włosów – pakiet próbny 0 zł";
 
 export const siteDescription =
-  "TRICHONEX na wypadanie włosów. Składniki według producenta, opinie klientek i informacje o zamówieniu. Płatność przy odbiorze przesyłki.";
+  "TRICHONEX na wypadanie włosów: odbierz pakiet próbny za 0 zł – płacisz tylko koszt dostawy przy odbiorze, bez przedpłaty. Składniki, opinie klientek i FAQ.";
 
 export const ogImage = {
   url: "/assets/img/product.png",
