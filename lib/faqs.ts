@@ -1,57 +1,43 @@
 // Shared by the FAQ accordion and the FAQPage JSON-LD on the landing page.
+// Every answer is taken from the product copy supplied for this page.
 export const faqs = [
   {
-    question: "Czy możliwe są reakcje alergiczne po zażyciu TRICHONEX?",
+    question: "Jak złożyć zamówienie?",
     answer:
-      "Reakcje alergiczne mogą wynikać wyłącznie z indywidualnej nietolerancji składników preparatu.",
+      "Złóż zamówienie na tej stronie, wypełniając formularz. Specjalista skontaktuje się z Tobą, a zamówienie wyślemy jeszcze tego samego dnia.",
   },
   {
-    question:
-      "Przestrzegając diety ketonowej, nie można jeść słodyczy i mąki. A jak jest przy użyciu TRICHONEX, czy to możliwe?",
+    question: "Jak stosować TRICHONEX?",
     answer:
-      "W małych ilościach jest to możliwe. TRICHONEX pomaga usunąć szybkie węglowodany z organizmu, dopóki nie zostaną wchłonięte.",
+      "Stosuj codziennie po 1 saszetce, mieszając ją w szklance wody. Kuracja powinna trwać przynajmniej 30 dni. Pamiętaj o systematyczności!",
   },
   {
-    question: "Gdzie można kupić TRICHONEX Free?",
+    question: "Po jakim czasie widać efekty?",
     answer:
-      "TRICHONEX Free jest sprzedawany tylko tutaj — na oficjalnej stronie producenta. To minimalizuje liczbę podróbek.",
+      "Producent podaje, że pełna odbudowa włosów następuje w ciągu 28 dni. Efekty są jednak indywidualne, a jedna z opinii klientek opisuje pierwsze nowe włoski po około 2 tygodniach.",
   },
   {
-    question: "Jak szybko można schudnąć dzięki TRICHONEX?",
+    question: "Gdzie kupić oryginalny TRICHONEX?",
     answer:
-      "Wszystko zależy od twojego organizmu i stylu życia. Średnio zajmuje to 1 miesiąc.",
+      "Oryginalny produkt kupisz tylko na tej stronie. Aby uniknąć fałszywych i wadliwych odpowiedników, nie kupuj TRICHONEX w innych miejscach.",
   },
   {
-    question: "Czy TRICHONEX przeszedł wymagane badania kliniczne?",
+    question: "Czy TRICHONEX zawiera naturalne składniki?",
     answer:
-      "TRICHONEX jest testowany i zatwierdzony przez wiodących europejskich dietetyków. Otrzymał kilka certyfikatów jakości i został nagrodzony na dorocznej konferencji na temat dietetyki i immunologii.",
+      "Producent podaje, że TRICHONEX zawiera 100% naturalne składniki: kolagen rybi NatiCol, MSM, witaminę C, siarczan glukozaminy i cynk.",
   },
   {
-    question: "Czy TRICHONEX jest kompatybilny ze wszystkimi produktami?",
-    answer: "Tak, TRICHONEX można przyjmować bez zmiany nawyków żywieniowych.",
-  },
-  {
-    question: "Czy waga utrzymuje się po skończeniu kuracji TRICHONEX?",
-    answer: "Tak, waga utrzymuje się przez długi czas.",
-  },
-  {
-    question: "Dlaczego TRICHONEX Free nie jest sprzedawany w aptekach i sklepach?",
+    question: "Czy TRICHONEX był badany?",
     answer:
-      "Tak więc producent chroni swój produkt przed pojawieniem się podróbek i komunikuje się bezpośrednio z klientami.",
+      "Według opinii Gawrońskiego Wiktora, profesora i trychologa, badania kliniczne saszetek wykazały ich skuteczność w walce z łysieniem i wypadaniem włosów.",
   },
   {
-    question: "Czy można używać TRICHONEX do leczenia organizmu?",
+    question: "Czy wypadanie włosów dotyczy tylko kobiet?",
     answer:
-      "Tak, TRICHONEX poprawia funkcjonowanie narządów wewnętrznych, oczyszcza organizm i nasyca witaminami. Wielu już po utracie wagi nadal stosuje TRICHONEX właśnie po to, aby poprawić funkcjonowanie organizmu.",
+      "Nie. Problem wypadania włosów dotyczy wszystkich ludzi, niezależnie od płci. Na jego nasilenie wpływają m.in. geny, brak równowagi hormonalnej, stres, blokowanie mieszków włosowych i wpływ toksycznych czynników.",
   },
   {
-    question:
-      "Jak długo po zażyciu proszku jest całkowicie wchłaniany przez organizm?",
-    answer: "Średnio porcja TRICHONEX jest wchłaniana w ciągu 10 minut.",
-  },
-  {
-    question: "Czy TRICHONEX ma jakieś analogi?",
-    answer:
-      "W tej chwili TRICHONEX nie ma analogów. Jest to unikalny produkt pochodzenia naturalnego, który działa bezpiecznie i jest bardzo skuteczny.",
+    question: "Jak płacić za zamówienie?",
+    answer: "Płatność należy uregulować przy otrzymaniu przesyłki.",
   },
 ];

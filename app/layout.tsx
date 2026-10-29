@@ -11,9 +11,8 @@ export const metadata: Metadata = {
   description: siteDescription,
   keywords: [
     "TRICHONEX",
-    "TRICHONEX Free",
     "TRICHONEX opinie",
-    "TRICHONEX cena",
+    "TRICHONEX na wypadanie włosów",
     "TRICHONEX gdzie kupić",
     "TRICHONEX oficjalna strona",
   ],

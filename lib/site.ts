@@ -6,14 +6,14 @@ export const siteUrl = (
 
 export const siteName = "TRICHONEX";
 
-export const siteTitle = "TRICHONEX – oficjalna strona | TRICHONEX Free";
+export const siteTitle = "TRICHONEX – oficjalna strona";
 
 export const siteDescription =
-  "TRICHONEX i TRICHONEX Free na oficjalnej stronie producenta. Sprawdź, jak działa TRICHONEX, poznaj opinie i odpowiedzi na najczęstsze pytania. Zamów online.";
+  "TRICHONEX – kompletna odnowa włosów w ciągu 28 dni. Naturalne składniki, opinie klientek i opinia trychologa. Zamów online i zapłać przy odbiorze.";
 
 export const ogImage = {
   url: "/assets/img/product.png",
-  width: 443,
-  height: 450,
-  alt: "TRICHONEX Free – opakowanie produktu",
+  width: 500,
+  height: 500,
+  alt: "TRICHONEX – opakowanie produktu",
 };

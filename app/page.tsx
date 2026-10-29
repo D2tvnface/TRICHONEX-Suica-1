@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { faqs } from "@/lib/faqs";
-import { ogImage, siteDescription, siteName, siteUrl } from "@/lib/site";
+import { ogImage, siteDescription, siteName, siteTitle, siteUrl } from "@/lib/site";
 import FaqList from "./_components/FaqList";
 import OrderForm from "./_components/OrderForm";
 import ScrollToForm from "./_components/ScrollToForm";
@@ -28,7 +28,7 @@ const structuredData = {
       "@type": "WebPage",
       "@id": `${siteUrl}/#webpage`,
       url: `${siteUrl}/`,
-      name: "TRICHONEX – oficjalna strona | TRICHONEX Free",
+      name: siteTitle,
       description: siteDescription,
       inLanguage: "pl-PL",
       isPartOf: { "@id": `${siteUrl}/#website` },
@@ -37,8 +37,7 @@ const structuredData = {
     {
       "@type": "Product",
       "@id": `${siteUrl}/#product`,
-      name: "TRICHONEX Free",
-      alternateName: "TRICHONEX",
+      name: siteName,
       brand: { "@type": "Brand", name: siteName },
       description: siteDescription,
       image: {
@@ -47,13 +46,6 @@ const structuredData = {
         url: `${siteUrl}${ogImage.url}`,
         width: ogImage.width,
         height: ogImage.height,
-      },
-      offers: {
-        "@type": "Offer",
-        url: `${siteUrl}/#form`,
-        price: "0",
-        priceCurrency: "PLN",
-        availability: "https://schema.org/InStock",
       },
     },
     {
@@ -99,7 +91,7 @@ export default function Home() {
               <ul className="navigation_list">
                 <li className="navigation_list-item">
                   <a className="to-scroll" data-scroll="works" href="#works">
-                    JAK TO DZIAŁA
+                    JAK DZIAŁA
                   </a>
                 </li>
                 <li className="navigation_list-item">
@@ -130,24 +122,22 @@ export default function Home() {
               <div className="_flower"></div>
               <div className="first_left">
                 <h1 className="title" id="hero-title">TRICHONEX</h1>
-                <p className="subtitle">
-                  TRICHONEX Free – dla tych, którzy nie są przyzwyczajeni do liczenia kalorii
-                </p>
+                <p className="subtitle">Kompletna odnowa włosów w ciągu 28 dni</p>
                 <div className="mobile_wrapper">
                   <div className="_woman"></div>
                   <div className="prod_wrapper">
                     <img
-                      alt="TRICHONEX Free – opakowanie produktu"
+                      alt="TRICHONEX – suplement diety na wypadanie włosów"
                       className="_prod"
                       src="/assets/img/product.png"
-                      width={443}
-                      height={450}
+                      width={500}
+                      height={500}
                       fetchPriority="high"
                     />
                   </div>
                 </div>
                 <a href="#form" className="href-cont">
-                  <button className="btn ever-popup-btn">NIE TRZEBA GŁODOWAĆ!</button>
+                  <button className="btn ever-popup-btn">ZAMÓW TERAZ</button>
                 </a>
               </div>
             </div>
@@ -162,43 +152,37 @@ export default function Home() {
                       <div className="circle">
                         <img alt="" src="/assets/img/wk1.png" width={38} height={35} loading="lazy" decoding="async" />
                       </div>
-                      <p>Spożycie węglowodanów zmniejsza się</p>
+                      <p>Odrastanie włosów</p>
                     </li>
                     <li className="works-list_item _2 _w50 _pr">
                       <div className="circle">
-                        <img alt="" src="/assets/img/wk5.png" width={32} height={34} loading="lazy" decoding="async" />
+                        <img alt="" src="/assets/img/wk2.png" width={37} height={34} loading="lazy" decoding="async" />
                       </div>
-                      <p>Ketony są przekształcane w energię dla mózgu</p>
+                      <p>Pobudzanie mieszków włosowych</p>
                     </li>
                     <li className="works-list_item _3 _w50 _pl">
                       <div className="circle">
-                        <img alt="" src="/assets/img/wk2.png" width={37} height={34} loading="lazy" decoding="async" />
-                      </div>
-                      <p>Poziom glukozy we krwi spada</p>
-                    </li>
-                    <li className="works-list_item _4 _w50 _pl2">
-                      <div className="circle">
-                        <img alt="" src="/assets/img/wk4.png" width={33} height={33} loading="lazy" decoding="async" />
-                      </div>
-                      <p>Tłuszcz zamienia się w ketony</p>
-                    </li>
-                    <li className="works-list_item _5 _w50 _pr2">
-                      <div className="circle">
                         <img alt="" src="/assets/img/wk3.png" width={39} height={37} loading="lazy" decoding="async" />
                       </div>
-                      <p>Ciało zaczyna spalać tłuszcz</p>
+                      <p>Ochrona przeciw wypadaniu</p>
                     </li>
                   </ul>
                 </div>
                 <div className="works-content">
-                  <h2 className="title works-title" id="works-title">Jak działa TRICHONEX?</h2>
+                  <h2 className="title works-title" id="works-title">
+                    Jak działa TRICHONEX i dlaczego jest lepszy niż podobne produkty?
+                  </h2>
                   <p className="text">
-                    <span className="product_name">TRICHONEX</span> zawiera tylko naturalne składniki, które
-                    wprowadzają organizm w trwały stan ketozy. Ketoza jest naturalnym procesem, który pozwala
-                    ciału produktywnie pracować w warunkach niskiego spożycia pokarmu.
+                    <span className="product_name">TRICHONEX</span> zwiększa wzrost włosów w miejscach, gdzie
+                    włosy są przerzedzone oraz stanowi barierę chroniącą przed uszkodzeniami skóry głowy.
+                  </p>
+                  <p className="text">
+                    Pobudza niewidoczne mieszki włosowe na poziomie mikrokomórkowym i rewitalizuje je od
+                    wewnątrz, dzięki zestawowi specjalnie dobranych składników odżywczych.
                   </p>
                   <p className="text font_bold">
-                    Wprowadzając ciało w stan ketozy, zaczynasz proces intensywnego spalania tłuszczu.
+                    Zapobiega większej utracie włosów poprzez wzmocnienie i regenerację mieszków włosowych.
+                    Tworzy warstwę chroniącą przed negatywnymi skutkami czynników środowiskowych.
                   </p>
                 </div>
               </div>
@@ -210,25 +194,37 @@ export default function Home() {
               <div className="_molecule"></div>
               <div className="eating-left">
                 <h2 className="title" id="eating-title">
-                  Klinicznie udowodniono,
-                  <br /> że <span className="nowrap">TRICHONEX</span>
+                  <span className="nowrap">TRICHONEX</span> to skoncentrowana moc witamin i roślin
                 </h2>
                 <ul className="eating-list">
-                  <li className="eating-list__item">zwiększa tempo metabolizmu o 70%</li>
-                  <li className="eating-list__item">zatrzymuje produkcję glukozy i komórek tłuszczowych o 150%</li>
-                  <li className="eating-list__item">pomaga ciału spalać tłuszcz i przekształcać go w energię</li>
-                  <li className="eating-list__item">zatrzymuje powstawanie zmarszczek i cellulitu</li>
                   <li className="eating-list__item">
-                    zmniejsza poziom kortyzolu - hormonu stresu i poprawia zdrowie psychiczne
+                    <b>Kolagen rybi NatiCol</b> – ten hydrolizowany kolagen jest łatwo przyswajalny przez
+                    organizm, co umożliwia skuteczną regenerację i wsparcie struktury skóry, włosów oraz
+                    paznokci.
                   </li>
-                  <li className="eating-list__item">przywraca funkcje mózgu i układu nerwowego</li>
+                  <li className="eating-list__item">
+                    <b>MSM</b> – pomaga w produkcji kolagenu, redukuje stany zapalne i przyczynia się do
+                    poprawy elastyczności oraz jędrności skóry.
+                  </li>
+                  <li className="eating-list__item">
+                    <b>Witamina C</b> – w połączeniu z kolagenem działa synergicznie, wzmacniając jego
+                    działanie.
+                  </li>
+                  <li className="eating-list__item">
+                    <b>Siarczan glukozaminy</b> – odgrywa kluczową rolę w utrzymaniu zdrowych stawów i
+                    chrząstek, poprawia wytrzymałość i elastyczność skóry.
+                  </li>
+                  <li className="eating-list__item">
+                    <b>Cynk</b> – minerał o silnych właściwościach przeciwutleniających, który wspiera zdrowie
+                    skóry, włosów i paznokci.
+                  </li>
                 </ul>
                 <div className="eating-right _abs">
                   <div className="_woman2"></div>
                   <div className="_circle"></div>
                 </div>
                 <a href="#form" className="href-cont">
-                  <button className="btn ever-popup-btn">KUP TERAZ PO ZNIŻCE!</button>
+                  <button className="btn ever-popup-btn">KUP TERAZ ZE ZNIŻKĄ!</button>
                 </a>
               </div>
             </div>
@@ -239,79 +235,25 @@ export default function Home() {
               <div className="diet-wrap">
                 <div className="diet-left _abs">
                   <img
-                    src="/assets/img/diet-image.png"
-                    alt="Produkty diety ketonowej: mięso, ryby, jajka i sery"
-                    width={671}
-                    height={597}
+                    src="/assets/img/hair-girl.png"
+                    alt="Kobieta z bujnymi, zdrowymi włosami"
+                    width={733}
+                    height={604}
                     loading="lazy"
                     decoding="async"
                   />
                 </div>
                 <div className="diet-right">
                   <h2 className="title diet-title" id="diet-title">
-                    Z TRICHONEX nie musisz ograniczać sobie pysznego jedzenia
+                    Wypadanie włosów nie zna płci
                   </h2>
                   <p className="text">
-                    Przestrzeganie diety ketonowej i odmawianie spożywania węglowodanów - wzmacnia działanie{" "}
-                    <span className="product_name">TRICHONEX</span>. Zaletą diety ketonowej jest możliwość
-                    codziennego spożywania wielu pysznych potraw, takich jak mięso, ryby, jajka, sery.
+                    Wszyscy ludzie mogą cierpieć na problemy z wypadaniem włosów, niezależnie od płci. Obecny
+                    stan środowiska, ciągła praca i niezrównoważona dieta pogarszają stan skóry głowy i
+                    włosów. W rezultacie włosy tracą siłę i objętość, łamią się i wypadają.
                   </p>
                 </div>
               </div>
-            </div>
-          </section>
-
-          <section className="cards" aria-label="Dieta ketonowa a dieta ketonowa z TRICHONEX">
-            <div className="card-left_back"></div>
-            <div className="card-right_back"></div>
-            <div className="limit">
-              <div className="card-list">
-                <div className="wrapper-card">
-                  <h3 className="title">Dieta ketonowa</h3>
-                  <p className="text">
-                    <b>Czas utraty wagi:</b> od 3 do 6 miesięcy
-                  </p>
-                  <p className="text">
-                    <b>Ograniczenia:</b> odrzucenie węglowodanów, umiarkowane spożycie białka
-                  </p>
-                  <p className="text">
-                    <b>Efekty uboczne:</b> kwasica (bóle głowy, senność, osłabienie); kamica nerkowa (kamienie
-                    nerkowe), demineralizacja kości, problemy żołądkowo-jelitowe, przejściowa hipoglikemia,
-                    odwodnienie
-                  </p>
-                  <p className="text">
-                    <b>Wynik:</b> minus 5–7 kg na miesiąc
-                  </p>
-                </div>
-                <div className="wrapper-card">
-                  <h3 className="title">
-                    Dieta ketonowa
-                    <br className="_mobile-elem" /> +{" "}
-                    <span className="_orange nowrap">TRICHONEX Free</span>
-                  </h3>
-                  <p className="text">
-                    <b>Czas odchudzania:</b> od 2 tygodni do miesiąca
-                  </p>
-                  <p className="text">
-                    <b>Ograniczenia:</b> umiarkowane spożycie węglowodanów
-                  </p>
-                  <p className="text">
-                    <b>Efekty uboczne:</b> nie wykryto
-                  </p>
-                  <p className="text">
-                    <b>Wynik:</b> minus 14-19 kg na miesiąc
-                  </p>
-                  <div className="center">
-                    <a href="#form" className="href-cont">
-                      <button className="btn ever-popup-btn">ZAMAWIAM!</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <p className="cards-conclusion">
-                Jednak nawet kontynuując normalne jedzenie i biorąc{" "}
-                <span className="_orange nowrap">TRICHONEX</span> — nadal będziesz intensywnie tracić na wadze.
-              </p>
             </div>
           </section>
 
@@ -324,32 +266,24 @@ export default function Home() {
                   <div className="_weight-left__circle"></div>
                 </div>
                 <div className="weight-right">
-                  <h2 className="title" id="weight-title">
-                    TRICHONEX zmieni twoje poglądy na temat odchudzania
-                  </h2>
+                  <h2 className="title" id="weight-title">Prosty sposób użycia</h2>
                   <ul className="weight-list">
                     <li className="weight-list_item">
-                      <img alt="" src="/assets/img/wh1.png" width={132} height={132} loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-usage-1.png" width={132} height={132} loading="lazy" decoding="async" />
                       <p className="item-text">
-                        <b>Wynik bez wysiłku</b> Aktywne składniki proszku działają przez cały dzień podczas
-                        pracy, relaksu, a nawet snu. Przyspieszają metabolizm i rozpoczynają proces spalania
-                        tłuszczu bez ćwiczeń.
+                        <b>Codziennie 1 saszetka</b> Stosuj codziennie po 1 saszetce, mieszając w szklance wody.
                       </p>
                     </li>
                     <li className="weight-list_item">
-                      <img alt="" src="/assets/img/wh2.png" width={132} height={132} loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-usage-2.png" width={132} height={132} loading="lazy" decoding="async" />
                       <p className="item-text">
-                        <b>Brak efektów ubocznych</b> Dzięki swoim naturalnym składnikom TRICHONEX nie
-                        wpływa niekorzystnie na serce, naczynia krwionośne ani wątrobę. Liczba reakcji
-                        alergicznych jest również zminimalizowana.
+                        <b>Minimum 30 dni</b> Kuracja powinna trwać przynajmniej 30 dni.
                       </p>
                     </li>
                     <li className="weight-list_item">
-                      <img alt="" src="/assets/img/wh3.png" width={132} height={132} loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-usage-3.png" width={132} height={132} loading="lazy" decoding="async" />
                       <p className="item-text">
-                        <b>Bez zmniejszenia masy mięśniowej</b> Składniki TRICHONEX rozkładają
-                        podskórny tłuszcz przy zachowaniu masy mięśniowej. Zapobiegają redukcji elektrolitów
-                        we krwi, co przyczynia się do zdrowego odchudzania.
+                        <b>Systematyczność</b> Pamiętaj o systematyczności!
                       </p>
                     </li>
                   </ul>
@@ -360,104 +294,55 @@ export default function Home() {
 
           <section className="choice" aria-labelledby="choice-title">
             <div className="limit">
-              <h2 className="title" id="choice-title">TRICHONEX czy inne środki – co wybierzesz?</h2>
+              <h2 className="title" id="choice-title">Przyczyny wypadania włosów wśród kobiet</h2>
               <ul className="choice-list">
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="Koktajle odchudzające" src="/assets/img/ch1.png" loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-cause-1.png" loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
-                      <p className="name">
-                        <b>
-                          Koktajle
-                          <br /> odchudzające
-                        </b>
-                      </p>
-                      <ul>
-                        <li><b>Kalorie:</b> 150-230</li>
-                        <li><b>Cukier:</b> 35-40 g</li>
-                        <li><b>Kofeina:</b> 25-30%</li>
-                      </ul>
+                      <p className="name"><b>Geny</b></p>
                     </div>
                   </div>
                 </li>
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="Odchudzająca kawa" src="/assets/img/ch2.png" loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-cause-2.png" loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
-                      <p className="name">
-                        <b>
-                          Odchudzająca
-                          <br /> kawa
-                        </b>
-                      </p>
-                      <ul>
-                        <li><b>Kalorie:</b> 120-180</li>
-                        <li><b>Cukier:</b> 0 g</li>
-                        <li><b>Kofeina:</b> 45-55%</li>
-                      </ul>
+                      <p className="name"><b>Brak równowagi hormonalnej</b></p>
                     </div>
                   </div>
                 </li>
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      {/* No width/height on the choice images: style.css fixes their height. */}
-                      <img alt="TRICHONEX Free" src="/assets/img/product.png" loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-cause-3.png" loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
-                      {/* The original markup put a <div> inside a <p>, which the browser split apart. */}
-                      <div className="name">
-                        <div className="logo">
-                          <span className="biger">TRICHONEX</span>
-                          <span className="smaller"></span>
-                        </div>
-                      </div>
-                      <ul>
-                        <li><b>Kalorie:</b> 0</li>
-                        <li><b>Cukier:</b> 0 g</li>
-                        <li><b>Kofeina:</b> 0 %</li>
-                      </ul>
+                      <p className="name"><b>Stres</b></p>
                     </div>
                   </div>
                 </li>
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="Pigułki odchudzające" src="/assets/img/ch3.png" loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-cause-4.png" loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
-                      <p className="name">
-                        <b>Szkodliwe pigułki odchudzające</b>
-                      </p>
-                      <ul>
-                        <li><b>Kalorie:</b> 190-250</li>
-                        <li><b>Cukier:</b> 10-20 g</li>
-                        <li><b>Kofeina:</b> 40-50%</li>
-                      </ul>
+                      <p className="name"><b>Blokowanie mieszków włosowych</b></p>
                     </div>
                   </div>
                 </li>
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="Herbata odchudzająca" src="/assets/img/ch4.png" loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-cause-5.png" loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
-                      <p className="name">
-                        <b>
-                          Herbata
-                          <br /> odchudzająca
-                        </b>
-                      </p>
-                      <ul>
-                        <li><b>Kalorie:</b> 10-130</li>
-                        <li><b>Cukier:</b> 0 g</li>
-                        <li><b>Kofeina:</b> 75-90%</li>
-                      </ul>
+                      <p className="name"><b>Wpływ toksycznych czynników</b></p>
                     </div>
                   </div>
                 </li>
@@ -469,19 +354,27 @@ export default function Home() {
             <div className="limit">
               <div className="_dotted"></div>
               <div className="exclusive-right">
-                <h2 className="title" id="exclusive-title">Powiedz GOODBYE nadwadze z TRICHONEX Free!</h2>
+                <h2 className="title" id="exclusive-title">Uważaj na podróbki!</h2>
                 <p className="text">
-                  <b>Schudnij 2 razy szybciej!</b>
+                  <b>100% jakość gwarantowana przez producenta!</b>
                 </p>
                 <div className="exclusive-left _abs">
                   <div className="_woman5"></div>
                   <div className="_exclusive-left__circle"></div>
                 </div>
                 <p className="border text">
-                  <img alt="" className="_prize" src="/assets/img/prize.png" width={361} height={212} loading="lazy" decoding="async" />
-                  <b>Ekskluzywna oferta!</b> kup TRICHONEX Free ze zniżką 100%. Czas ograniczony
+                  <img
+                    alt="Certyfikat jakości TRICHONEX"
+                    className="_prize"
+                    src="/assets/img/hair-cert.png"
+                    width={221}
+                    height={318}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  Aby uniknąć fałszywych i wadliwych odpowiedników, kup oryginalny produkt tylko na tej stronie.
                   <a href="#form" className="href-cont">
-                    <button className="btn ever-popup-btn">ZAMAWIAM!</button>
+                    <button className="btn ever-popup-btn">ZAMÓW TERAZ</button>
                   </a>
                 </p>
               </div>
@@ -491,38 +384,32 @@ export default function Home() {
           <section className="review" aria-labelledby="review-title">
             <div className="limit">
               <h2 className="title review-title" id="review-title">
-                TRICHONEX opinie – dziewczyny powierzają mu swoją sylwetkę i zdrowie
+                Opinie o TRICHONEX
               </h2>
               <div className="review-slider">
                 <Review
-                  avatar="/assets/img/avatar3.jpg"
-                  name="nicky99"
-                  image="/assets/img/rev2.jpg"
-                  imageSize={320}
-                  likes="176"
-                  date="24 listopada 2024 r"
-                  dateClass="date-4"
-                  text="Biorę udział w kuracji odchudzającej z TRICHONEX i schudłam już 8 kg w 2 tygodnie! Czy ktoś jeszcze próbował tego cudownego preparatu?"
+                  avatar="/assets/img/hair-avatar-1.png"
+                  name="Maria, lat 37"
+                  image="/assets/img/hair-review-1.png"
+                  imageWidth={337}
+                  imageHeight={267}
+                  text="Przed stosowaniem dokładnie zbadałam obszar głowy na krawędzi łysienia i skóry głowy... w 7-8 dniu aplikacji już zaczęłam zauważać małe ciemne włosy. Z odległości nie było widać, ale zdecydowanie zauważyłam, że NOWE włosy zaczęły rosnąć! Kto by uwierzył, że powiedzenie, że utrata włosów jest nieodwracalna, jest błędne? Wad też nie zauważyłam."
                 />
                 <Review
-                  avatar="/assets/img/ava2.png"
-                  name="iamqueen"
-                  image="/assets/img/rev1.jpg"
-                  imageSize={320}
-                  likes="342"
-                  date="25 listopada 2024 r"
-                  dateClass="date-3"
-                  text="Pamiętacie, jak opowiadałam w swoich Stories, że zaczęłam używać TRICHONEX? Chcę się pochwalić swoimi wynikami: -14 kg w zaledwie miesiąc! Dieta ketonowa przestrzegana z umiarem i takie wyniki! Jestem bardzo zadowolona!!!!!"
+                  avatar="/assets/img/hair-avatar-2.png"
+                  name="Anna, lat 39"
+                  image="/assets/img/hair-review-2.png"
+                  imageWidth={339}
+                  imageHeight={271}
+                  text="Po 35-tym roku życia zaczęły pojawiać się pierwsze oznaki łysienia. Przez przypadek dostałam saszetki na porost włosów – TRICHONEX i postanowiłam regularnie je stosować. Po 4 miesiącach moje przyjaciółki zauważyły, że w miejscach, gdzie wcześniej włosy były przerzedzone, pojawiły się nowe. Co prawda wcześniej nie wierzyłam, że to pomoże. Ostatecznie uratowałam moje włosy!"
                 />
                 <Review
-                  avatar="/assets/img/avatar1.jpg"
-                  name="violet"
-                  image="/assets/img/rev3.jpg"
-                  imageSize={960}
-                  likes="225"
-                  date="26 listopada 2024 r"
-                  dateClass="date-2"
-                  text="Dziś otrzymałam długo oczekiwany suplement TRICHONEX. Oficjalnie zaczynam odchudzanie :) Kto chce spróbować ze mną?"
+                  avatar="/assets/img/hair-avatar-3.png"
+                  name="Zofia, lat 42"
+                  image="/assets/img/hair-review-3.png"
+                  imageWidth={336}
+                  imageHeight={267}
+                  text="Pierwszą rzeczą, na którą chcę zwrócić uwagę, jest skuteczność. Nowe włosy urosły w miejscu łysiny, a już istniejące stały się zauważalnie grubsze. Po drugie, konsekwencje ustały całkowicie. Po trzecie, cienkie włosy stały się silniejsze. Po miesiącu odzyskałam pewność siebie. Dziękuję!"
                 />
               </div>
             </div>
@@ -547,13 +434,29 @@ export default function Home() {
           <section className="last" aria-labelledby="order-title">
             <div className="_flower"></div>
             <div className="limit">
+              <div className="order-steps-wrap">
+                  <h3 className="order-steps-title">Jak złożyć zamówienie?</h3>
+                  <ol className="order-steps">
+                    <li>
+                      <p><b>Krok 1.</b> Złóż zamówienie na tej stronie, wypełniając formularz.</p>
+                    </li>
+                    <li>
+                      <p><b>Krok 2.</b> Specjalista skontaktuje się z Tobą.</p>
+                    </li>
+                    <li>
+                      <p><b>Krok 3.</b> Ostrożnie zapakujemy Twoje zamówienie i wyślemy jeszcze tego samego dnia.</p>
+                    </li>
+                    <li>
+                      <p><b>Krok 4.</b> Płatność należy uregulować przy otrzymaniu przesyłki.</p>
+                    </li>
+                  </ol>
+              </div>
               <div className="last-left">
                 <h2 className="title" id="order-title">
-                  Zamów TRICHONEX Free – czas na odchudzanie!
+                  Zamów TRICHONEX – pełna odbudowa włosów już w 28 dni!
                 </h2>
                 <p className="text border">
-                  <b>TRICHONEX</b> —<br className="_mobile-elem" /> najszybszy i najskuteczniejszy sposób na
-                  odchudzanie
+                  <b>Kup teraz ze zniżką!</b> Płatność należy uregulować przy otrzymaniu przesyłki.
                 </p>
                 <div className="last-right">
                   <div className="back"></div>
@@ -576,14 +479,12 @@ type ReviewProps = {
   avatar: string;
   name: string;
   image: string;
-  imageSize: number;
-  likes: string;
-  date: string;
-  dateClass: string;
+  imageWidth: number;
+  imageHeight: number;
   text: string;
 };
 
-function Review({ avatar, name, image, imageSize, likes, date, dateClass, text }: ReviewProps) {
+function Review({ avatar, name, image, imageWidth, imageHeight, text }: ReviewProps) {
   return (
     <article className="inst">
       <div className="inst__header">
@@ -602,37 +503,16 @@ function Review({ avatar, name, image, imageSize, likes, date, dateClass, text }
       <div className="inst__img">
         <img
           src={image}
-          alt={`Zdjęcie z opinii ${name} o TRICHONEX`}
-          width={imageSize}
-          height={imageSize}
+          alt={`Zdjęcie przed i po stosowaniu TRICHONEX – ${name}`}
+          width={imageWidth}
+          height={imageHeight}
           loading="lazy"
           decoding="async"
         />
       </div>
-      <div className="inst__control" aria-hidden="true">
-        <ul className="inst__control-soc">
-          <li className="inst__control-item">
-            <img src="/assets/img/inst_like.png" alt="" width={26} height={22} loading="lazy" decoding="async" />
-          </li>
-          <li className="inst__control-item">
-            <img src="/assets/img/inst_comment.png" alt="" width={22} height={22} loading="lazy" decoding="async" />
-          </li>
-          <li className="inst__control-item">
-            <img src="/assets/img/inst_share.png" alt="" width={24} height={21} loading="lazy" decoding="async" />
-          </li>
-        </ul>
-        <div className="inst__control-last">
-          <img src="/assets/img/inst_add.png" alt="" width={20} height={25} loading="lazy" decoding="async" />
-        </div>
-      </div>
       <div className="inst__description">
-        <p className="lova-lova"><b>Likes: {likes}</b></p>
         <p className="inst__description-text">
           <b>{name}</b> {text}
-        </p>
-        <br />
-        <p className="inst__description-date">
-          <span className={dateClass} data-format="dd month yyyy">{date}</span>
         </p>
       </div>
     </article>

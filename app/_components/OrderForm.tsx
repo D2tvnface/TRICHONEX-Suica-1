@@ -10,7 +10,7 @@ const inputStyle: CSSProperties = {
   padding: "10px 20px",
   width: "85%",
   borderRadius: 25,
-  fontSize: 25,
+  fontSize: 20,
   boxShadow: "0px 3px 0px 0px #808080",
 };
 
@@ -80,16 +80,7 @@ export default function OrderForm() {
           }}
         >
           <p>
-            Stara cena:{" "}
-            <span style={{ fontSize: 24, color: "#dd1616" }}>
-              <s>169 PLN</s>
-            </span>
-          </p>
-          <p>
-            <b>
-              Nowa cena:{" "}
-              <span style={{ fontSize: 32, color: "green" }}>0 PLN</span>
-            </b>
+            <b>Płatność przy odbiorze przesyłki</b>
           </p>
           <form
             id="formularz1"
