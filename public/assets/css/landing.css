@@ -43,3 +43,16 @@
         min-height: 0;
     }
 }
+
+/* Order section: let the column grow with its content so the form is never clipped. */
+.last .limit {
+    min-height: 0;
+    height: auto;
+    padding-bottom: 40px;
+}
+.last-left {
+    height: auto;
+}
+.last-right {
+    height: 100%;
+}

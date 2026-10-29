@@ -363,15 +363,6 @@ export default function Home() {
                   <div className="_exclusive-left__circle"></div>
                 </div>
                 <p className="border text">
-                  <img
-                    alt="Certyfikat jakości TRICHONEX"
-                    className="_prize"
-                    src="/assets/img/hair-cert.png"
-                    width={221}
-                    height={318}
-                    loading="lazy"
-                    decoding="async"
-                  />
                   Aby uniknąć fałszywych i wadliwych odpowiedników, kup oryginalny produkt tylko na tej stronie.
                   <a href="#form" className="href-cont">
                     <button className="btn ever-popup-btn">ZAMÓW TERAZ</button>
