@@ -128,22 +128,6 @@ export default function ThanksPage() {
                   </a>
                 </div>
               </div>
-              <div className="footer-contacts__content">
-                <div className="d-flex justify-content-between flex-xl-row flex-column">
-                  <p className="footer_address__text m-0">
-                    Lazard inc. Grenzacherstrasse 124, floor 9-16 4058 Basel, Switzerland
-                  </p>
-                  <p className="footer-phone__text m-0">
-                    Phone: &nbsp;
-                    <a className="footer-phone__link" href="tel:+62215727585">
-                      +62 21 5727585
-                    </a>
-                  </p>
-                  <a className="footer-url__link" href="lazardhealthcare.com" target="_blank">
-                    lazardhealthcare.com
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </footer>

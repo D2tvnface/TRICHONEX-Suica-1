@@ -63,13 +63,7 @@ const structuredData = {
 export default function Home() {
   return (
     <>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link
-        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900|Oswald:400|Roboto:400,700&display=swap&subset=latin,latin-ext"
-        rel="stylesheet"
-        precedence="default"
-      />
+      <link rel="stylesheet" href="/assets/css/fonts.css" precedence="default" />
       <link rel="stylesheet" href="/assets/css/style.css" precedence="default" />
       <link rel="stylesheet" href="/assets/css/landing.css" precedence="default" />
       <script
@@ -428,7 +422,7 @@ export default function Home() {
             <div className="_flower"></div>
             <div className="limit">
               <div className="order-steps-wrap">
-                  <h3 className="order-steps-title">Jak złożyć zamówienie?</h3>
+                  <h3 className="order-steps-title">Krok po kroku</h3>
                   <ol className="order-steps">
                     <li>
                       <p><b>Krok 1.</b> Złóż zamówienie na tej stronie, wypełniając formularz.</p>
