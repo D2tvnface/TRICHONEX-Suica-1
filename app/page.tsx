@@ -66,7 +66,7 @@ export default function Home() {
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link
-        href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,900,900i|Oswald:300,400,700|Roboto:300,400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900|Oswald:400|Roboto:400,700&display=swap&subset=latin,latin-ext"
         rel="stylesheet"
         precedence="default"
       />
@@ -121,15 +121,15 @@ export default function Home() {
             <div className="limit">
               <div className="_flower"></div>
               <div className="first_left">
-                <h1 className="title" id="hero-title">TRICHONEX</h1>
-                <p className="subtitle">Kompletna odnowa włosów w ciągu 28 dni</p>
+                <h1 className="title" id="hero-title">TRICHONEX na wypadanie włosów</h1>
+                <p className="subtitle">Według producenta: kompletna odnowa włosów w ciągu 28 dni</p>
                 <div className="mobile_wrapper">
                   <div className="_woman"></div>
                   <div className="prod_wrapper">
                     <img
                       alt="TRICHONEX – suplement diety na wypadanie włosów"
                       className="_prod"
-                      src="/assets/img/product.png"
+                      src="/assets/img/product.webp"
                       width={500}
                       height={500}
                       fetchPriority="high"
@@ -173,7 +173,7 @@ export default function Home() {
                     Jak działa TRICHONEX i dlaczego jest lepszy niż podobne produkty?
                   </h2>
                   <p className="text">
-                    <span className="product_name">TRICHONEX</span> zwiększa wzrost włosów w miejscach, gdzie
+                    <span className="product_name">TRICHONEX</span> według producenta zwiększa wzrost włosów w miejscach, gdzie
                     włosy są przerzedzone oraz stanowi barierę chroniącą przed uszkodzeniami skóry głowy.
                   </p>
                   <p className="text">
@@ -193,9 +193,8 @@ export default function Home() {
             <div className="limit">
               <div className="_molecule"></div>
               <div className="eating-left">
-                <h2 className="title" id="eating-title">
-                  <span className="nowrap">TRICHONEX</span> to skoncentrowana moc witamin i roślin
-                </h2>
+                <h2 className="title" id="eating-title">Składniki TRICHONEX</h2>
+                <p className="text">Opisy działania według producenta.</p>
                 <ul className="eating-list">
                   <li className="eating-list__item">
                     <b>Kolagen rybi NatiCol</b> – ten hydrolizowany kolagen jest łatwo przyswajalny przez
@@ -235,7 +234,7 @@ export default function Home() {
               <div className="diet-wrap">
                 <div className="diet-left _abs">
                   <img
-                    src="/assets/img/hair-girl.png"
+                    src="/assets/img/hair-girl.webp"
                     alt="Kobieta z bujnymi, zdrowymi włosami"
                     width={733}
                     height={604}
@@ -269,19 +268,19 @@ export default function Home() {
                   <h2 className="title" id="weight-title">Prosty sposób użycia</h2>
                   <ul className="weight-list">
                     <li className="weight-list_item">
-                      <img alt="" src="/assets/img/hair-usage-1.png" width={132} height={132} loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-usage-1.webp" width={132} height={132} loading="lazy" decoding="async" />
                       <p className="item-text">
                         <b>Codziennie 1 saszetka</b> Stosuj codziennie po 1 saszetce, mieszając w szklance wody.
                       </p>
                     </li>
                     <li className="weight-list_item">
-                      <img alt="" src="/assets/img/hair-usage-2.png" width={132} height={132} loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-usage-2.webp" width={132} height={132} loading="lazy" decoding="async" />
                       <p className="item-text">
                         <b>Minimum 30 dni</b> Kuracja powinna trwać przynajmniej 30 dni.
                       </p>
                     </li>
                     <li className="weight-list_item">
-                      <img alt="" src="/assets/img/hair-usage-3.png" width={132} height={132} loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-usage-3.webp" width={132} height={132} loading="lazy" decoding="async" />
                       <p className="item-text">
                         <b>Systematyczność</b> Pamiętaj o systematyczności!
                       </p>
@@ -299,7 +298,7 @@ export default function Home() {
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="" src="/assets/img/hair-cause-1.png" loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-cause-1.webp" width={177} height={177} loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
                       <p className="name"><b>Geny</b></p>
@@ -309,7 +308,7 @@ export default function Home() {
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="" src="/assets/img/hair-cause-2.png" loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-cause-2.webp" width={177} height={177} loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
                       <p className="name"><b>Brak równowagi hormonalnej</b></p>
@@ -319,7 +318,7 @@ export default function Home() {
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="" src="/assets/img/hair-cause-3.png" loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-cause-3.webp" width={177} height={177} loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
                       <p className="name"><b>Stres</b></p>
@@ -329,7 +328,7 @@ export default function Home() {
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="" src="/assets/img/hair-cause-4.png" loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-cause-4.webp" width={177} height={177} loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
                       <p className="name"><b>Blokowanie mieszków włosowych</b></p>
@@ -339,7 +338,7 @@ export default function Home() {
                 <li className="choice-list_item">
                   <div className="wrapper-item">
                     <div className="image-block">
-                      <img alt="" src="/assets/img/hair-cause-5.png" loading="lazy" decoding="async" />
+                      <img alt="" src="/assets/img/hair-cause-5.webp" width={177} height={177} loading="lazy" decoding="async" />
                     </div>
                     <div className="choice-list__content">
                       <p className="name"><b>Wpływ toksycznych czynników</b></p>
@@ -377,27 +376,30 @@ export default function Home() {
               <h2 className="title review-title" id="review-title">
                 Opinie o TRICHONEX
               </h2>
+              <p className="text review-disclaimer">
+                Opinie indywidualnych klientek. Efekty mogą być różne u różnych osób.
+              </p>
               <div className="review-slider">
                 <Review
-                  avatar="/assets/img/hair-avatar-1.png"
+                  avatar="/assets/img/hair-avatar-1.webp"
                   name="Maria, lat 37"
-                  image="/assets/img/hair-review-1.png"
+                  image="/assets/img/hair-review-1.webp"
                   imageWidth={337}
                   imageHeight={267}
                   text="Przed stosowaniem dokładnie zbadałam obszar głowy na krawędzi łysienia i skóry głowy... w 7-8 dniu aplikacji już zaczęłam zauważać małe ciemne włosy. Z odległości nie było widać, ale zdecydowanie zauważyłam, że NOWE włosy zaczęły rosnąć! Kto by uwierzył, że powiedzenie, że utrata włosów jest nieodwracalna, jest błędne? Wad też nie zauważyłam."
                 />
                 <Review
-                  avatar="/assets/img/hair-avatar-2.png"
+                  avatar="/assets/img/hair-avatar-2.webp"
                   name="Anna, lat 39"
-                  image="/assets/img/hair-review-2.png"
+                  image="/assets/img/hair-review-2.webp"
                   imageWidth={339}
                   imageHeight={271}
                   text="Po 35-tym roku życia zaczęły pojawiać się pierwsze oznaki łysienia. Przez przypadek dostałam saszetki na porost włosów – TRICHONEX i postanowiłam regularnie je stosować. Po 4 miesiącach moje przyjaciółki zauważyły, że w miejscach, gdzie wcześniej włosy były przerzedzone, pojawiły się nowe. Co prawda wcześniej nie wierzyłam, że to pomoże. Ostatecznie uratowałam moje włosy!"
                 />
                 <Review
-                  avatar="/assets/img/hair-avatar-3.png"
+                  avatar="/assets/img/hair-avatar-3.webp"
                   name="Zofia, lat 42"
-                  image="/assets/img/hair-review-3.png"
+                  image="/assets/img/hair-review-3.webp"
                   imageWidth={336}
                   imageHeight={267}
                   text="Pierwszą rzeczą, na którą chcę zwrócić uwagę, jest skuteczność. Nowe włosy urosły w miejscu łysiny, a już istniejące stały się zauważalnie grubsze. Po drugie, konsekwencje ustały całkowicie. Po trzecie, cienkie włosy stały się silniejsze. Po miesiącu odzyskałam pewność siebie. Dziękuję!"
@@ -444,7 +446,7 @@ export default function Home() {
               </div>
               <div className="last-left">
                 <h2 className="title" id="order-title">
-                  Zamów TRICHONEX – pełna odbudowa włosów już w 28 dni!
+                  Zamów TRICHONEX
                 </h2>
                 <p className="text border">
                   <b>Kup teraz ze zniżką!</b> Płatność należy uregulować przy otrzymaniu przesyłki.

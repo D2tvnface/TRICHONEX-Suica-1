@@ -81,7 +81,7 @@ export default function ThanksPage() {
                         </div>
                         <img
                           className="current-product__img"
-                          src="/assets/img/product.png"
+                          src="/assets/img/product.webp"
                           alt="TRICHONEX – opakowanie produktu"
                         />
                       </div>

@@ -56,3 +56,23 @@
 .last-right {
     height: 100%;
 }
+
+/* Disclaimer under the reviews heading. */
+.review-disclaimer {text-align: center;font-size: 14px;margin: 0 auto 20px;max-width: 560px;opacity: 0.8;}
+
+/* Longer hero H1 (brand + keyword) needs a smaller size on phones to stay out of the leaf decoration. */
+@media screen and (max-width: 768px) {
+    #hero-title {
+        font-size: 30px;
+        line-height: 1.15;
+        margin-bottom: 8px;
+    }
+}
+
+/* Desktop: keep the longer hero H1 inside the left column, clear of the bottle image. */
+@media screen and (min-width: 769px) {
+    #hero-title {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+}
